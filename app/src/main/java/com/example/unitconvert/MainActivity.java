@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 String s = editText.getText().toString();
                 int kg = Integer.parseInt(s);
                 double pound = 2.20462 * kg;
+                pound = Math.round(pound*100.0)/100.0;
                 textView.setText("The Corresponding Value in Pound is " + pound);
             }
         });
